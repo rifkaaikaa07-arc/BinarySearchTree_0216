@@ -27,4 +27,8 @@ public:
     {
         root = NULL;
     }
+
+    void insert(string element)
+    {
+    }
 };
