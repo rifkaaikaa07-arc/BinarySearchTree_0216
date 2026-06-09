@@ -2,6 +2,10 @@
 #include<string>
 using namespace std;
 
-class node
+class node 
 {
+public:
+    string info;
+    node *leftchild;
+    node *rightchild;
 };
