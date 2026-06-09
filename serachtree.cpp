@@ -61,5 +61,17 @@ public:
     // as well as the current node of its parent
     void search(string element, node *&parent, node *&currentnode)
     {
+        currentnode = root;
+        parent = NULL;
+
+        while (currentnode != NULL && currentnode->info != element)
+        {
+            parent = currentnode;
+
+            if (element < currentnode->info)
+                currentnode = currentnode->leftchild;
+            else
+                currentnode = currentnode->rightchild;
+        }
     }
 };
