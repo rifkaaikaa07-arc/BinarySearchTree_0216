@@ -74,4 +74,8 @@ public:
                 currentnode = currentnode->rightchild;
         }
     }
+
+    void inorder(node *ptr)
+    {
+    }
 };
